@@ -1,0 +1,50 @@
+1. Newton Second Law:
+
+STORE "Mass" empty
+STORE "Velocity" empty
+STORE "Newton" empty
+
+SET "Mass" TO 600
+SET "Velocity" TO 2
+SET "Newton" TO (CALCULATE "Mass" times "Velocity")
+
+DISPLAY "Newton"
+
+
+
+
+
+2. Tahun Kabisat:
+
+STORE "Tahun" with any number
+STORE "Bagi4" empty
+STORE "Bagi100" empty
+STORE "Bagi400" empty
+ 
+CALCULATE "Tahun" divided by 4 REPEATEDLY, then STORE RESULT to "Bagi4"
+CALCULATE "Tahun" divided by 100 REPEATEDLY, then STORE RESULT to "Bagi100"
+CALCULATE "Tahun" divided by 400 REPEATEDLY, then STORE RESULT to "Bagi400"
+
+IF "Bagi4" equal to 0 AND "Bagi100" not equal to 0, DISPLAY "Tahun" plus "Adalah tahun kabisat"
+IF "Bagi4", "Bagi100", "Bagi400" equal to 0, DISPLAY "Tahun" plus "Adalah tahun kabisat"
+
+
+
+
+3. Laundry Day:
+
+STORE "Pakaian" with any number
+
+IF "Pakaian" bigger than 20, CALCULATE "Pakaian" minus 1, then REPEAT
+IF "Pakaian" lower than 20, CALCULATE "Pakaian" plus 1, then REPEAT
+IF "Pakaian" equal to 20, DISPLAY "Pakaian siap dicuci"
+
+
+
+
+4. Periksa Kuku:
+
+STORE "Murid" with "Panjang" OR "Pendek"
+
+IF "Murid" equal to "Panjang", DISPLAY "Murid dihukum"
+IF "Murid" equal to "Pendek", DISPLAY "Murid dipuji"
