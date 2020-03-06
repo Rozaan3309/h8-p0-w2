@@ -12,16 +12,22 @@ function angkaPalindrome(num) {
 */
 function angkaPalindrome(num) {
     let newNum = (num + 1).toString()
-    
-    for (let a = Number(newNum); a >= 0; a--){
+
+    // while (!ketemu) {
+
+    // }
+    while (true) {
         let flippedNum = ''
-        for(let b = newNum.length - 1; b >= 0; b--){
+        for (let b = newNum.length - 1; b >= 0; b--) { // membalik
             flippedNum += newNum[b]
-            if (flippedNum == newNum){
-                return newNum
-                }
         }
-        newNum = (Number(newNum) +1).toString()
+        if (flippedNum == newNum) { // cek balik = asli
+            return newNum
+        
+        } else {
+
+            newNum = (Number(newNum) + 1).toString()
+        }
     }
 }
 

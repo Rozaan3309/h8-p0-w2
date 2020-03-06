@@ -27,7 +27,6 @@ function hitungJumlahKata(kalimat) {
     
 }
 */
-
 function hitungJumlahKata(kalimat) {
     let spaceCount = 0
     for (let a = 0; a < kalimat.length; a++){
