@@ -1,4 +1,4 @@
-var hari = 17
+var hari = 31
 var bulan = 8
 var tahun = 1945
 
