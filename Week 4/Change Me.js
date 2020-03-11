@@ -1,11 +1,13 @@
 function changeMe(arr) {
     let num = 1
     let obj = {}
-    let currentYear = 2019
+    let currentYear = 2020
     for (let i = 0; i < arr.length; i++){
 
         for (let j = 0; j < 4; j++){
-            if(j === 0){
+            if (j === 3 && arr[i][j] > currentYear){
+                obj.age = 'Invalid Birth Year'
+            }else if(j === 0){
                 obj.firstName = arr[i][j]
             } else if (j === 1){
                 obj.lastName = arr[i][j]
@@ -13,10 +15,13 @@ function changeMe(arr) {
                 obj.gender = arr[i][j]
             } else if (j === 3 && arr[i][j] !== undefined){
                 obj.age = currentYear - arr[i][j]
+            } else if (j === 3 && arr[i][j] === undefined){
+                obj.age = 'Invalid Birth Year'
             }
         }
-        console.log(num + '. ' + arr[i][0] + ' ' + arr[i][1] + obj)
+        console.log(num + '. ' + arr[i][0] + ' ' + arr[i][1], obj)
         obj = {}
+        num++
     }
     
 }
