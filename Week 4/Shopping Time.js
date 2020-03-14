@@ -1,10 +1,10 @@
 function shoppingTime(memberId, money) {
     let itemlist = [
-        ['Stacattu', 1500000],
-        ['BajuZoro', 500000],
-        ['BajuHN', 250000],
-        ['SweaterUnik', 175000],
-        ['CasingHP', 50000]
+        ['Sepatu Stacattu', 1500000],
+        ['Baju Zoro', 500000],
+        ['Baju H&N', 250000],
+        ['Sweater Uniklooh', 175000],
+        ['Casing Handphone', 50000]
     ]
 
     let result = {

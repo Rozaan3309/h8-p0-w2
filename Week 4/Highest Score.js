@@ -82,26 +82,3 @@ console.log(highestScore([
 
 
 console.log(highestScore([])); //{}
-
-console.log(highestScore([
-    {
-      name: 'Dimitri',
-      score: 90,
-      class: 'foxes'
-    },
-    {
-      name: 'Alexei',
-      score: 95,
-      class: 'wolves'
-    },
-    {
-      name: 'Sergei',
-      score: 74,
-      class: 'foxes'
-    },
-    {
-      name: 'Anastasia',
-      score: 10,
-      class: 'wolves'
-    }
-    ]));

@@ -2,6 +2,11 @@ function changeMe(arr) {
     let num = 1
     let obj = {}
     let currentYear = 2020
+
+    if (arr.length === 0){
+        console.log('""')
+        
+    }
     for (let i = 0; i < arr.length; i++){
 
         for (let j = 0; j < 4; j++){
